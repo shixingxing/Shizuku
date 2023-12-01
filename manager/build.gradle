@@ -26,7 +26,12 @@ android {
         prefab true
     }
     signingConfigs {
-        sign
+        sign {
+            storeFile file('keystore.jks')
+            storePassword "SXX2023"
+            keyAlias "kidd"
+            keyPassword "SXX2023"
+        }
     }
     buildTypes {
         debug {
